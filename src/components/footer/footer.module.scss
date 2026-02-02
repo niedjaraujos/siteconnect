@@ -1,0 +1,14 @@
+@use '../../globalStyles.scss' as *;
+
+.footer {
+  background-color: $color-bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 67px;
+}
+.footerText {
+  color: $color-black;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+}

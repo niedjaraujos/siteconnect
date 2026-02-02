@@ -8,6 +8,7 @@ import { EventosEP } from './pages/eventosEP/EventosEP';
 import { Usuario } from './pages/usuario/Usuario';
 import { Mentoria } from './pages/mentoria/Mentoria';
 import { Header } from './components/header/Header';
+import { Footer } from './components/footer/Footer';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="usuario" element={<Usuario />} />
         <Route path="voluntariado" element={<Voluntariado />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };
