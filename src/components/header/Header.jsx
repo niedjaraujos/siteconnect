@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import logo from '../../assets/logo.png';
 import S from './header.module.scss';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export const Header = () => {
   const [menuAberto, setMenuAberto] = useState(false);
@@ -9,6 +9,18 @@ export const Header = () => {
     setMenuAberto(!menuAberto);
   };
 
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    function menuMobile() {
+      setIsMobile(window.innerWidth <= 768);
+      if (window.innerWidth > 768) {
+        setMenuAberto(false);
+      }
+    }
+    window.addEventListener('resize', menuMobile);
+    return () => window.removeEventListener('resize', menuMobile);
+  }, []);
   return (
     <header className={S.header}>
       <div className={S.headerContainer}>
@@ -42,7 +54,9 @@ export const Header = () => {
         />
 
         <nav className={`${S.navUser} ${menuAberto ? S.open : ''}`}>
-          <Link onClick={() => setMenuAberto(false)}>Niedja Araujo</Link>
+          <Link to={'/usuario'} onClick={() => setMenuAberto(false)}>
+            Niedja Araujo
+          </Link>
           <Link onClick={() => setMenuAberto(false)}>Meu voluntariado</Link>
           <Link onClick={() => setMenuAberto(false)}>
             Configurações da conta
