@@ -1,16 +1,25 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🧩 Plataforma CONNECT - Vai na Web
+<p align="center">
+   <img src="https://img.shields.io/badge/STATUS-INCOMPLETO-orange?style=for-the-badge"/>
+</p>
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📚 Descrição
+Uma organização fictícia deseja lançar uma plataforma digital para divulgar, conectando iniciativas sociais, voluntários e pessoas interessadas em gerar impacto positivo na sociedade.
+O seu papel será desenvolver-la, com foco em uma experiência moderna, acessível, responsiva e inspiradora.
 
-## React Compiler
+🧩 Regras do Desafio
+✅ Tecnologias Obrigatórias
+1. React.js
+2. React Router DOM
+3. SCSS (Classes bem nomeadas - Metodologia BEM )
+4. Responsividade
+ 
+❌ Não é permitido
+1. Frameworks CSS (Bootstrap, Tailwind, etc.)
+2. Bibliotecas de UI prontas
+3. Plugins externos de layout
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🔗Link do desafio:
+https://www.figma.com/design/CwoQuNaBJRB3bwiAbUwuAr/Desafio-fim-de-ano-vini-e-jef?node-id=0-1&p=f&t=vrVDZ1FlI7U87Iyx-0
