@@ -2,9 +2,9 @@ import { Card } from "../../components/card/Card";
 import S from "./eventosEP.module.scss";
 
 //imagens
-import institutoImagem from "../../assets/instituto-grande-familia.png";
-import conectaImagem from "../../assets/instituto-conecta-jovem.png";
-import futuroImagem from "../../assets/projeto-futuro-escola.png";
+import empoderandoImagem from "../../assets/empoderando.png";
+import tectransformaImagem from "../../assets/tectransforma.png";
+import carreiraImagem from "../../assets/carreira.png";
 
 export const EventosEP = () => {
   return (
@@ -14,22 +14,25 @@ export const EventosEP = () => {
 
         <div className={S.cards}>
           <Card
-            image={institutoImagem}
+            image={empoderandoImagem}
             title="Empoderando Jovens para o Futuro"
             text="Atividade: Palestra motivacional sobre liderança jovem e transformação social."
             // text="Impacto: Inspirar adolescentes a se tornarem agentes de mudança em suas comunidades."
             button="Quero Doar"
           />
           <Card
-            image={futuroImagem}
-            title="Projeto Futuro na Escola"
-            text="Contribua com alimentos não perecíveis e ajude famílias em situação de vulnerabilidade."
+            image={tectransformaImagem}
+            title="Tecnologia que Transforma"
+            text="Atividade: Workshop de introdução à programação e inovação digital.
+Impacto: Preparar jovens para o mercado de trabalho através da tecnologia."
             button="Quero Doar"
           />
           <Card
-            image={conectaImagem}
-            title="Instituto Conecta Jovem"
-            text="Contribua com alimentos não perecíveis e ajude famílias em situação de vulnerabilidade."
+            image={carreiraImagem}
+            title="Carreira e Primeiro Emprego"
+            text="Atividade: Palestra com profissionais de RH sobre como preparar currículo, entrevistas e postura no mercado.
+
+            Impacto: Ajudar jovens a conquistar oportunidades de trabalho."
             button="Quero Doar"
           />
         </div>
