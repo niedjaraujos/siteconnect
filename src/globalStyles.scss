@@ -5,7 +5,12 @@
   list-style: none;
   text-decoration: none;
 }
-
+#root {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  width: 100%;
+}
 // variáveis
 
 // cores
@@ -16,21 +21,47 @@ $color-white: #ffffff;
 $color-black: #000000;
 $color-bottom: #e9eff4;
 $color-hover: #00aaff;
+$color-tag: #278733;
+$color-bg-tag: #d4e7d6;
 
 //fontes
 $font-title: "Source Sans 3", sans-serif;
-$font-text: "Inter", sans-serif;
+$font-text: "Helvetica", sans-serif;
+$font-third: "Inter", sans-serif;
 
-//stilos global de titulos
+//stilos global
+
+.container {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+  flex: 1;
+}
 h1,
 h2 {
   font-family: $font-title;
   color: $color-font;
   font-weight: 700;
   line-height: 100%;
+  font-size: 3.5rem;
 }
 p {
   font-family: $font-text;
   font-weight: 400;
   color: $color-principal;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  margin-top: 3rem;
+
+  @media (width >= 1024px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 0;
+  }
 }

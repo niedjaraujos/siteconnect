@@ -22,13 +22,13 @@ export const Doacao = () => {
           <Card
             image={futuroImagem}
             title="Projeto Futuro na Escola"
-            text="Contribua com alimentos não perecíveis e ajude famílias em situação de vulnerabilidade."
+            text="Doe livros, cadernos, lápis, mochilas e canetas para ajudar jovens a continuarem seus estudos com mais estrutura."
             button="Quero Doar"
           />
           <Card
             image={conectaImagem}
             title="Instituto Conecta Jovem"
-            text="Contribua com alimentos não perecíveis e ajude famílias em situação de vulnerabilidade."
+            text="Doe computadores usados, tablets ou celulares em bom estado para permitir que jovens tenham acesso ao mundo digital e novas oportunidades."
             button="Quero Doar"
           />
         </div>

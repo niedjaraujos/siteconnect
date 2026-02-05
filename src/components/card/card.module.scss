@@ -33,6 +33,9 @@
 }
 .card__text {
   font-size: 1rem;
+  color: $color-font;
+  font-family: $font-third;
+  width: 80%;
 }
 .card__button {
   width: 200px;
@@ -45,6 +48,7 @@
   border: none;
   cursor: pointer;
   transition: 0.5s;
+  margin-top: auto; /* Essa margem empurra o botão para o final do card */
 
   &:hover {
     background-color: $color-hover;

@@ -1,0 +1,52 @@
+@use "../../globalStyles.scss" as *;
+
+.usuario {
+  display: flex;
+  font-family: $font-third;
+}
+
+.usuario__image img {
+  border-radius: 50%;
+  border: 5px solid $color-hover;
+}
+.usuario__content {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.usuario__name {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.usuario__function {
+  color: $color-tag;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.infoList {
+  display: flex;
+
+  & li {
+    text-align: center;
+    padding: 1rem 2rem;
+    background-repeat: no-repeat;
+    background-position: left 5px center;
+  }
+
+  &__infoLocal {
+    background-image: url("../../assets/icons/local.png");
+  }
+
+  &__infoDate {
+    background-image: url("../../assets/icons/date.png");
+  }
+  &__infoEmail {
+    background-image: url("../../assets/icons/mail.png");
+  }
+}
+.usuario__tagList {
+  display: flex;
+  gap: 1rem;
+}
