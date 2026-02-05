@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './globalStyles.scss';
 
-import { PaginaInicial } from './pages/paginaInicial/PaginaInicial';
+import { Home } from './pages/home/Home';
 import { Voluntariado } from './pages/voluntariado/Voluntariado';
 import { Doacao } from './pages/doacao/Doacao';
 import { EventosEP } from './pages/eventosEP/EventosEP';
@@ -15,7 +15,7 @@ const App = () => {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/" element={<PaginaInicial />} />
+        <Route path="/" element={<Home />} />
         <Route path="doacao" element={<Doacao />} />
         <Route path="eventosEP" element={<EventosEP />} />
         <Route path="mentoria" element={<Mentoria />} />

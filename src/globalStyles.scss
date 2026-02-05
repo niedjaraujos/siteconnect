@@ -5,12 +5,32 @@
   list-style: none;
   text-decoration: none;
 }
+
 // variáveis
 
 // cores
-$color-primary: #205691;
-$color-secondary: #fd7267;
+$color-principal: #205691;
+$color-btn: #fd7267;
 $color-font: #122f97;
 $color-white: #ffffff;
 $color-black: #000000;
 $color-bottom: #e9eff4;
+$color-hover: #00aaff;
+
+//fontes
+$font-title: "Source Sans 3", sans-serif;
+$font-text: "Inter", sans-serif;
+
+//stilos global de titulos
+h1,
+h2 {
+  font-family: $font-title;
+  color: $color-font;
+  font-weight: 700;
+  line-height: 100%;
+}
+p {
+  font-family: $font-text;
+  font-weight: 400;
+  color: $color-principal;
+}
