@@ -1,14 +1,19 @@
-@use '../../globalStyles.scss' as *;
+@use "../../globalStyles.scss" as *;
 
 .footer {
   background-color: $color-bottom;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 67px;
+  text-align: center;
+  height: 4rem;
 }
 .footerText {
   color: $color-black;
-  font-size: 1rem;
-  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  font-family: "Inter", sans-serif;
+
+  @media (width >= 1024px) {
+    font-size: 1rem;
+  }
 }
