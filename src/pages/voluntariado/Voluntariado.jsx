@@ -2,9 +2,9 @@ import { Card } from "../../components/card/Card";
 import S from "./voluntariado.module.scss";
 
 //imagens
-import reciclagemImagem from "../../assets/reciclagem.png";
-import aulasImagem from "../../assets/aulas-tecnologia.png";
-import inclusaoImagem from "../../assets/inclusao.png";
+import reciclagemImagem from "../../assets/images/reciclagem.png";
+import aulasImagem from "../../assets/images/aulas-tecnologia.png";
+import inclusaoImagem from "../../assets/images/inclusao.png";
 
 export const Voluntariado = () => {
   return (

@@ -2,9 +2,9 @@ import { Card } from "../../components/card/Card";
 import S from "./mentoria.module.scss";
 
 //imagens
-import mentoriaImagem from "../../assets/mentoria.png";
-import experienciaImagem from "../../assets/experiencia.png";
-import acompanhamentoImagem from "../../assets/acompanhamento.png";
+import mentoriaImagem from "../../assets/images/mentoria.png";
+import experienciaImagem from "../../assets/images/experiencia.png";
+import acompanhamentoImagem from "../../assets/images/acompanhamento.png";
 
 export const Mentoria = () => {
   return (

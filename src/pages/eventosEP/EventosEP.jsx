@@ -2,9 +2,9 @@ import { Card } from "../../components/card/Card";
 import S from "./eventosEP.module.scss";
 
 //imagens
-import empoderandoImagem from "../../assets/empoderando.png";
-import tectransformaImagem from "../../assets/tectransforma.png";
-import carreiraImagem from "../../assets/carreira.png";
+import empoderandoImagem from "../../assets/images/empoderando.png";
+import tectransformaImagem from "../../assets/images/tectransforma.png";
+import carreiraImagem from "../../assets/images/carreira.png";
 
 export const EventosEP = () => {
   return (

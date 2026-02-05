@@ -2,9 +2,9 @@ import { Card } from "../../components/card/Card";
 import S from "./doacao.module.scss";
 
 //imagens
-import institutoImagem from "../../assets/instituto.png";
-import conectaImagem from "../../assets/conecta.png";
-import futuroImagem from "../../assets/futuro.png";
+import institutoImagem from "../../assets/images/instituto.png";
+import conectaImagem from "../../assets/images/conecta.png";
+import futuroImagem from "../../assets/images/futuro.png";
 
 export const Doacao = () => {
   return (

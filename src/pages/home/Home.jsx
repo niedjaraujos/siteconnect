@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 import S from "./home.module.scss";
-import banner from "../../assets/img_1.png";
+import banner from "../../assets/images/img_1.png";
 
 export const Home = () => {
   return (
