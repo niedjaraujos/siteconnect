@@ -9,7 +9,6 @@
 
   @media (width >= 1024px) {
     flex-direction: row;
-    justify-content: space-between;
   }
 }
 .hero__content {
@@ -26,6 +25,7 @@
   @media (width >= 1024px) {
     text-align: left;
     align-items: start;
+    gap: 1rem;
   }
 }
 
@@ -73,7 +73,6 @@
   @media (width >= 1024px) {
     flex-direction: row;
     justify-content: space-between;
-
     margin-block: 2rem;
   }
 }
@@ -88,7 +87,7 @@
 .hero__image {
   max-width: 100vw;
   @media (width >= 1024px) {
-    width: 100%;
+    width: 35%;
   }
 }
 
