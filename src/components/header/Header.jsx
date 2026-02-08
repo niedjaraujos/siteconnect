@@ -47,15 +47,14 @@ export const Header = () => {
           <Link to={"/usuario"} onClick={() => setMenuAberto(false)}>
             Niedja Araujo
           </Link>
-          <div className={S.navUser__nav}>
-            <NavBar />
-          </div>
 
           <Link onClick={() => setMenuAberto(false)}>Meu voluntariado</Link>
           <Link onClick={() => setMenuAberto(false)}>
             Configurações da conta
           </Link>
-
+          <div className={S.navUser__nav}>
+            <NavBar />
+          </div>
           <Link onClick={() => setMenuAberto(false)}>Sair</Link>
         </nav>
       </div>
