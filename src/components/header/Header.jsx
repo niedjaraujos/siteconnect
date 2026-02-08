@@ -52,7 +52,7 @@ export const Header = () => {
           <Link onClick={() => setMenuAberto(false)}>
             Configurações da conta
           </Link>
-          <div className={S.navUser__nav}>
+          <div className={S.navUser__nav} onClick={() => setMenuAberto(false)}>
             <NavBar />
           </div>
           <Link onClick={() => setMenuAberto(false)}>Sair</Link>
