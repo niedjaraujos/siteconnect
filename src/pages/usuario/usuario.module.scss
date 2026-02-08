@@ -15,12 +15,12 @@
     border-radius: 1rem;
     flex-direction: row;
     width: 80%;
-    margin: 10rem auto 0;
+    margin: 4rem auto;
   }
 }
 .usuario__image {
-  max-width: 300px;
-  width: 100%;
+  max-width: 350px;
+  width: 90%;
 }
 
 .usuario__image img {
@@ -58,7 +58,7 @@
     font-size: 1.75rem;
   }
   @media (width >= 1024px) {
-    font-size: 1.35rem;
+    font-size: 1.3rem;
   }
 }
 .infoList {
@@ -81,9 +81,9 @@
       font-size: 1.5rem;
     }
 
-    @media (width >= 1024px) {
+    @media (width >= 1440px) {
       padding: 0.5rem 2rem;
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
   }
 
@@ -119,7 +119,7 @@
   @media (width >= 768px) {
     font-size: 1.5rem;
   }
-  @media (width >= 1024px) {
+  @media (width >= 1440px) {
     font-size: 1rem;
   }
 }

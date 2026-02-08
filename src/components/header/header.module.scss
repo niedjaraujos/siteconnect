@@ -15,33 +15,19 @@
 .logo {
   width: 4rem;
 }
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  display: none;
 
-  @media (width >= 1024px) {
-    display: flex;
-    gap: 3rem;
-  }
-}
-.link {
-  color: $color-white;
-  font-family: "Source Sans 3", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 400;
-
-  &:hover {
-    color: $color-bottom;
-    border-bottom: 2px solid $color-btn;
-  }
-}
 .imgUser {
   width: 4rem;
   border-radius: 50%;
   border: 3px solid $color-hover;
   cursor: pointer;
+}
+.navbar {
+  display: none;
+
+  @media (width >= 768px) {
+    display: flex;
+  }
 }
 .navUser {
   position: absolute;
@@ -55,6 +41,10 @@
 
   @media (width >= 768px) {
     width: 20vw;
+
+    .navUser__nav {
+      display: none;
+    }
   }
   @media (width >= 1440px) {
     width: 10vw;

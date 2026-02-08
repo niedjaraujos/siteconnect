@@ -1,0 +1,29 @@
+@use "../../globalStyles.scss" as *;
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (width >= 768px) {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+  @media (width >= 1440px) {
+    gap: 3rem;
+  }
+}
+.link {
+  color: $color-white;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 400;
+
+  @media (width >= 768px) {
+    font-size: 1.25rem;
+  }
+
+  &:hover {
+    color: $color-bottom;
+    border-bottom: 2px solid $color-btn;
+  }
+}

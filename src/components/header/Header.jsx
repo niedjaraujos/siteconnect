@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import logo from "../../assets/icons/logo.png";
 import S from "./header.module.scss";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { NavBar } from "../navBar/NavBar";
 
 export const Header = () => {
   const [menuAberto, setMenuAberto] = useState(false);
@@ -31,20 +32,9 @@ export const Header = () => {
             alt="Imagem de logo do projeto connect sendo representada por uma mão segurando um coração, simbolizando apoio"
           />
         </Link>
-        <nav className={S.nav}>
-          <Link className={S.link} to="/doacao">
-            Doação
-          </Link>
-          <Link className={S.link} to="/voluntariado">
-            Voluntariado
-          </Link>
-          <Link className={S.link} to="/mentoria">
-            Mentoria
-          </Link>
-          <Link className={S.link} to="/eventosEP">
-            Eventos & Palestras
-          </Link>
-        </nav>
+        <div className={S.navbar}>
+          <NavBar />
+        </div>
 
         <img
           className={S.imgUser}
@@ -57,10 +47,15 @@ export const Header = () => {
           <Link to={"/usuario"} onClick={() => setMenuAberto(false)}>
             Niedja Araujo
           </Link>
+          <div className={S.navUser__nav}>
+            <NavBar />
+          </div>
+
           <Link onClick={() => setMenuAberto(false)}>Meu voluntariado</Link>
           <Link onClick={() => setMenuAberto(false)}>
             Configurações da conta
           </Link>
+
           <Link onClick={() => setMenuAberto(false)}>Sair</Link>
         </nav>
       </div>
