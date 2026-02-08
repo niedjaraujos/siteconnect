@@ -13,8 +13,7 @@ export const Home = () => {
             Conectamos sua empresa com projetos sociais impactantes. Juntos,
             criamos mudanças reais na comunidade.
           </p>
-          {/* CTA significa "Call to Action" (Chamada para Ação em português).
-        o botão "Cadastrar empresa" é um CTA porque está incentivando o visitante a tomar uma ação (se cadastrar). */}
+
           <Link className={S.hero__cta}>Cadastrar empresa</Link>
           <div className={S.hero__stats}>
             <article className={S.stats__item}>

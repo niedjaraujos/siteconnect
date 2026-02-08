@@ -8,7 +8,7 @@ export const Card = ({ image, alt, title, text, span, button }) => {
       </div>
       <h2 className={S.card__title}>{title}</h2>
       <p className={S.card__text}>{text}</p>
-      <span className={S.card__text}>{span}</span>
+      <p className={S.card__text}>{span}</p>
       <button className={S.card__button}>{button}</button>
     </article>
   );
