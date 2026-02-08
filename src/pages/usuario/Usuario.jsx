@@ -1,6 +1,6 @@
 import S from "./usuario.module.scss";
 
-export const Usuario = () => {
+const Usuario = () => {
   return (
     <main>
       <section className={S.usuario}>
@@ -38,3 +38,4 @@ export const Usuario = () => {
     </main>
   );
 };
+export default Usuario;

@@ -6,7 +6,7 @@ import empoderandoImagem from "../../assets/images/empoderando.png";
 import tectransformaImagem from "../../assets/images/tectransforma.png";
 import carreiraImagem from "../../assets/images/carreira.png";
 
-export const EventosEP = () => {
+const EventosEP = () => {
   return (
     <main>
       <section className={S.container}>
@@ -39,3 +39,4 @@ export const EventosEP = () => {
     </main>
   );
 };
+export default EventosEP;

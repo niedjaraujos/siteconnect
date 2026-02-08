@@ -6,7 +6,7 @@ import institutoImagem from "../../assets/images/instituto.png";
 import conectaImagem from "../../assets/images/conecta.png";
 import futuroImagem from "../../assets/images/futuro.png";
 
-export const Doacao = () => {
+const Doacao = () => {
   return (
     <main>
       <section className={S.container}>
@@ -36,3 +36,4 @@ export const Doacao = () => {
     </main>
   );
 };
+export default Doacao;

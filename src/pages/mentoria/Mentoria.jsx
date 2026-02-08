@@ -6,7 +6,7 @@ import mentoriaImagem from "../../assets/images/mentoria.png";
 import experienciaImagem from "../../assets/images/experiencia.png";
 import acompanhamentoImagem from "../../assets/images/acompanhamento.png";
 
-export const Mentoria = () => {
+const Mentoria = () => {
   return (
     <main>
       <section className={S.container}>
@@ -36,3 +36,4 @@ export const Mentoria = () => {
     </main>
   );
 };
+export default Mentoria;

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import S from "./home.module.scss";
 import banner from "../../assets/images/img_1.png";
 
-export const Home = () => {
+const Home = () => {
   return (
     <main>
       <section className={S.hero}>
@@ -40,3 +40,4 @@ export const Home = () => {
     </main>
   );
 };
+export default Home;

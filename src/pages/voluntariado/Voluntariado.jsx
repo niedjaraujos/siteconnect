@@ -6,7 +6,7 @@ import reciclagemImagem from "../../assets/images/reciclagem.png";
 import aulasImagem from "../../assets/images/aulas-tecnologia.png";
 import inclusaoImagem from "../../assets/images/inclusao.png";
 
-export const Voluntariado = () => {
+const Voluntariado = () => {
   return (
     <main>
       <section className={S.container}>
@@ -36,3 +36,4 @@ export const Voluntariado = () => {
     </main>
   );
 };
+export default Voluntariado;
