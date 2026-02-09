@@ -14,7 +14,9 @@ const Home = () => {
             criamos mudanças reais na comunidade.
           </p>
 
-          <Link className={S.hero__cta}>Cadastrar empresa</Link>
+          <Link to={"/cadastro"} className={S.hero__cta}>
+            Cadastrar empresa
+          </Link>
           <div className={S.hero__stats}>
             <article className={S.stats__item}>
               <h2 className={S.stats__number}>500+</h2>

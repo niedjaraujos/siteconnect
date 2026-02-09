@@ -25,23 +25,26 @@ export const Header = () => {
   return (
     <header className={S.header}>
       <div className={S.headerContainer}>
-        <Link to="/">
+        <Link to="/" className={S.logo}>
           <img
-            className={S.logo}
             src={logo}
             alt="Imagem de logo do projeto connect sendo representada por uma mão segurando um coração, simbolizando apoio"
           />
+          <span>siteconnect</span>
         </Link>
+
         <div className={S.navbar}>
           <NavBar />
         </div>
-
-        <img
-          className={S.imgUser}
-          src="https://github.com/niedjaraujos.png"
-          alt="Imagem do usuário logado"
-          onClick={toggleMenu}
-        />
+        <div className={S.header__user}>
+          <Link to={"/cadastro"}>Entrar</Link>
+          <img
+            className={S.imgUser}
+            src="https://github.com/niedjaraujos.png"
+            alt="Imagem do usuário logado"
+            onClick={toggleMenu}
+          />
+        </div>
 
         <nav className={`${S.navUser} ${menuAberto ? S.open : ""}`}>
           <Link to={"/usuario"} onClick={() => setMenuAberto(false)}>
@@ -49,7 +52,7 @@ export const Header = () => {
           </Link>
 
           <Link onClick={() => setMenuAberto(false)}>Meu voluntariado</Link>
-          <Link onClick={() => setMenuAberto(false)}>
+          <Link to={"/conta"} onClick={() => setMenuAberto(false)}>
             Configurações da conta
           </Link>
           <div className={S.navUser__nav} onClick={() => setMenuAberto(false)}>

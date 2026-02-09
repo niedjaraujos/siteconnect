@@ -15,6 +15,8 @@ const Doacao = lazy(() => import("../pages/doacao/Doacao"));
 const EventosEP = lazy(() => import("../pages/eventosEP/EventosEP"));
 const Usuario = lazy(() => import("../pages/usuario/Usuario"));
 const Mentoria = lazy(() => import("../pages/mentoria/Mentoria"));
+const Conta = lazy(() => import("../pages/conta/Conta"));
+const Cadastro = lazy(() => import("../pages/cadastro/Cadastro"));
 
 export const AppRoutes = () => {
   return (
@@ -26,6 +28,8 @@ export const AppRoutes = () => {
         <Route path="mentoria" element={<Mentoria />} />
         <Route path="usuario" element={<Usuario />} />
         <Route path="voluntariado" element={<Voluntariado />} />
+        <Route path="conta" element={<Conta />} />
+        <Route path="cadastro" element={<Cadastro />} />
       </Routes>
     </Suspense>
   );
