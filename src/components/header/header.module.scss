@@ -37,9 +37,9 @@ a {
   display: flex;
   align-items: center;
   gap: 2rem;
-  img {
-    display: none;
-  }
+  // img {
+  //   display: none;
+  // }
 
   a {
     font-weight: 600;
@@ -70,20 +70,16 @@ a {
   top: 5rem;
   background-color: $color-principal;
   border-radius: 10px;
-  width: 50vw;
+  width: clamp(200px, 5vw, 200px);
   padding: 1rem 0;
   display: none;
 
   @media (width >= 768px) {
-    width: 20vw;
-
     .navUser__nav {
       display: none;
     }
   }
-  @media (width >= 1440px) {
-    width: 10vw;
-  }
+
   a {
     font-size: 1rem;
     display: block;
