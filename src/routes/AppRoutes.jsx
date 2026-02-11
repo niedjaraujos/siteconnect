@@ -1,13 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { lazy, Suspense } from "react";
 
-// // import { Home } from "../pages/home/Home";
-// import { Voluntariado } from "../pages/voluntariado/Voluntariado";
-// import { Doacao } from "../pages/doacao/Doacao";
-// import { EventosEP } from "../pages/eventosEP/EventosEP";
-// import { Usuario } from "../pages/usuario/Usuario";
-// import { Mentoria } from "../pages/mentoria/Mentoria";
-
 // lazy imports
 const Home = lazy(() => import("../pages/home/Home"));
 const Voluntariado = lazy(() => import("../pages/voluntariado/Voluntariado"));
