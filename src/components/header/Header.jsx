@@ -26,7 +26,7 @@ export const Header = () => {
         </div>
         <div className={S.header__user}>
           {!userLogado ? (
-            <Link to={"/cadastro"} onClick={() => setUserLogado(true)}>
+            <Link to={"/"} onClick={() => setUserLogado(true)}>
               Entrar
             </Link>
           ) : (
@@ -51,7 +51,7 @@ export const Header = () => {
           <div className={S.navUser__nav} onClick={() => setMenuAberto(false)}>
             <NavBar />
           </div>
-          <Link onClick={() => setMenuAberto(false)}>Sair</Link>
+          <Link onClick={userLogado}>Sair</Link>
         </nav>
       </div>
     </header>
