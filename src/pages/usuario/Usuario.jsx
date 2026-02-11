@@ -17,9 +17,10 @@ const Usuario = () => {
           </div>
 
           <p className={S.usuario__bio}>
-            Apaixonado por fazer a diferença na comunidade. Acredito que
-            pequenas ações podem transformar vidas e estou sempre em busca de
-            novas oportunidades para ajudar.
+            Desenvolvedora Front-End em formação, com foco em acessibilidade,
+            organização e experiência do usuário. Apaixonada por transformar
+            ideias em interfaces claras e funcionais, especialmente para
+            projetos com impacto social.
           </p>
 
           <ul className={S.infoList}>
