@@ -1,7 +1,11 @@
 import S from "./cadastro.module.scss";
 
 const Cadastro = () => {
-  return <div>Cadastro</div>;
+  return (
+    <main>
+      <form action=""></form>
+    </main>
+  );
 };
 
 export default Cadastro;

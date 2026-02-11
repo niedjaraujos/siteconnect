@@ -1,7 +1,7 @@
 import S from "./label.module.scss";
 
-const Label = () => {
-  return <div>Label</div>;
+const Label = ({ label }) => {
+  return <label htmlFor="">{label}</label>;
 };
 
 export default Label;
