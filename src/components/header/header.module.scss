@@ -40,12 +40,10 @@ a {
   // img {
   //   display: none;
   // }
-
   a {
     font-weight: 600;
     transition: transform 0.3s;
     border-bottom: 1px solid transparent;
-
     &:hover {
       border-bottom: 1px solid $color-bottom;
     }
@@ -73,6 +71,7 @@ a {
   width: clamp(200px, 5vw, 200px);
   padding: 1rem 0;
   display: none;
+  z-index: 1000;
 
   @media (width >= 768px) {
     .navUser__nav {

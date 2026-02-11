@@ -9,19 +9,7 @@ export const Header = () => {
   const toggleMenu = () => {
     setMenuAberto(!menuAberto);
   };
-
-  // const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-
-  // useEffect(() => {
-  //   function menuMobile() {
-  //     setIsMobile(window.innerWidth <= 768);
-  //     if (window.innerWidth > 768) {
-  //       setMenuAberto(false);
-  //     }
-  //   }
-  //   window.addEventListener('resize', menuMobile);
-  //   return () => window.removeEventListener('resize', menuMobile);
-  // }, []);
+  const [userLogado, setUserLogado] = useState(false);
   return (
     <header className={S.header}>
       <div className={S.headerContainer}>
@@ -37,13 +25,18 @@ export const Header = () => {
           <NavBar />
         </div>
         <div className={S.header__user}>
-          <Link to={"/cadastro"}>Entrar</Link>
-          <img
-            className={S.imgUser}
-            src="https://github.com/niedjaraujos.png"
-            alt="Imagem do usuário logado"
-            onClick={toggleMenu}
-          />
+          {!userLogado ? (
+            <Link to={"/cadastro"} onClick={() => setUserLogado(true)}>
+              Entrar
+            </Link>
+          ) : (
+            <img
+              className={S.imgUser}
+              src="https://github.com/niedjaraujos.png"
+              alt="Imagem do usuário logado"
+              onClick={toggleMenu}
+            />
+          )}
         </div>
 
         <nav className={`${S.navUser} ${menuAberto ? S.open : ""}`}>
