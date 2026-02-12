@@ -1,1 +1,18 @@
 @use "../../globalStyles.scss" as *;
+
+.input {
+  font-size: 1.5rem;
+  color: $color-principal;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  input {
+    outline: none;
+    width: 50%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    padding: 1rem;
+  }
+}

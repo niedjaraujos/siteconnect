@@ -50,7 +50,7 @@ a {
   }
 }
 .imgUser {
-  width: 4rem;
+  width: 3rem;
   border-radius: 50%;
   border: 3px solid $color-hover;
   cursor: pointer;
@@ -65,7 +65,7 @@ a {
 .navUser {
   position: absolute;
   right: -20px;
-  top: 5rem;
+  top: 4rem;
   background-color: $color-principal;
   border-radius: 10px;
   width: clamp(200px, 5vw, 200px);
