@@ -4,12 +4,12 @@ import S from "./cadastro.module.scss";
 const Cadastro = () => {
   return (
     <main>
-      <form action="">
-        <div className={S.formGroup}>
+      <section className={S.container}>
+        <form action="">
           <Input label="Email da empresa:" />
-        </div>
-        <button className={S.btnEnviar}>Cadastrar</button>
-      </form>
+          <button className={S.btnEnviar}>Cadastrar</button>
+        </form>
+      </section>
     </main>
   );
 };
